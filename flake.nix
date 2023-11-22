@@ -1,6 +1,5 @@
 {
   description = "ectool with support for the Framework Laptop 13 AMD Ryzen 7040 Series";
-  homepage = "https://gitlab.howett.net/DHowett/ectool";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
