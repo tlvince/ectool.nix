@@ -13,8 +13,8 @@
 
     ectoolSrc = pkgs.fetchgit {
       url = "https://gitlab.howett.net/DHowett/ectool.git";
-      rev = "d0fea390d2a65de7a0f3ea5823f59824fda8861e";
-      sha256 = "sha256-RD2HNwYNLkEp4Koyuvyy9cc0NRNvfORRxhigMMGgYfc=";
+      rev = "3ebe7b8b713b2ebfe2ce92d48fd8d044276b2879";
+      sha256 = "sha256-soif8LrN4ceeUcesw5bB1BpuZw9lfwwQgQQefht5D4A=";
     };
 
     ectool = pkgs.stdenv.mkDerivation {
@@ -45,7 +45,7 @@
     };
 
   in {
-    packages."${system}".ectool = ectool;
+    packages.${system}.ectool = ectool;
     defaultPackage.${system} = ectool;
   };
 }
